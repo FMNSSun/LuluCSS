@@ -13,6 +13,8 @@ html, body {
   padding: 0;
 }
 
+body { padding-bottom: 1em; }
+
 .h-bar {
   min-height: 2%;
   width: 100%;
@@ -269,6 +271,7 @@ button {
   font-size: 0.8em;
   border: solid 0.2em lightgray;
   background-color: whitesmoke;
+  width: 100%;
 }
 
 button:hover {
@@ -357,6 +360,10 @@ p {
 .small { font-size: 0.9em; }
 .very-small { font-size: 0.6em; }
 .italic { font-style: italic; }
+.caption {
+  font-size: 0.75em;
+  color: darkgray;
+}
 
 p.title {
   margin: 0; padding: 0;
@@ -445,7 +452,27 @@ p.title {
   .tbl-grids-cell { display: block; }
 }
 
+.form-group input, .form-group select, textarea {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
+.form-group + .form-group {
+  margin-top: 1em;
+}
+
+p.error, span.error {
+  color: red;
+}
+
+input.error, select.error {
+  border: solid 0.2em red;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
 
 .gray-box {
   background-color: lightgrey;
@@ -453,17 +480,23 @@ p.title {
   padding: 0.1em;
 }
 
-input {
+select, input, textarea {
   padding: 0.5em;
   border: solid 0.2em lightgray;
+  background-color: white;
   box-shadow: none;
   width: 100%;
   box-sizing: border-box;
   font-size: 0.8em;
 }
 
+textarea {
+  font-family: monospace, monospace; /* hack to get browser's monospace scaling out of my way */
+  min-height: 5em;
+}
 
-input:focus {
+
+input:focus, select:focus, textarea:focus {
   border: solid 0.2em cornflowerblue;
   box-shadow: none;
 }

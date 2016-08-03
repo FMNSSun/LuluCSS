@@ -9,3 +9,7 @@ If you use LuluCSS *please* adhere to our/my philosophy of not messing with the 
 When filing bug reports please provide a minimal HTML file to reproduce the bug. Also mention the 
 browser and browser version as well as the version of LuluCSS used. Please check if the bug is still
 present in the latest version of LuluCSS.
+
+## Notice
+
+Please be aware that this is a work in progress and currently you should consider it as a public alpha.

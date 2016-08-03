@@ -1,7 +1,8 @@
 # LuluCSS
 
 A simple, small but responsive CSS framework based on an em-grid. Sizes are generally relative to the user's
-selected font-size. 
+selected font-size. LuluCSS does not override the user's font settings because we beleive this is a bad thing to do.
+If you use LuluCSS *please* adhere to our/my philosophie of not messing with the user's font settings. 
 
 ## Bug reports and Feature Whishes
 

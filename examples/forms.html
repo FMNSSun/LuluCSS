@@ -9,6 +9,7 @@
 	<div class="center-container">
       <h1>LuluCSS</h1>
       <h2>Forms</h2>
+      <h3>Login Example</h3>
       <div class="flex-grids-row flex-center">
         <form style="max-width: 20em" class="small-border padding-1 padding-1-h">
           <div class="flex-grids-row flex-center row-margin">
@@ -28,6 +29,43 @@
           </div>
         </form>
       </div>
+      <h3>Other example</h3>
+      <form style="max-width: 30em" class="small-border padding-1 padding-1-h">
+        <div class="form-group">
+          <label class="row-margin">City</label>
+          <input class="row-margin" type="text" name="city" placeholder="city"></input>
+          <p class="caption">Enter the name or ZIP code of your city.</p>
+        </div>
+        <div class="form-group">
+          <label class="row-margin">Company Name</label>
+          <input class="row-margin" type="text" name="company" placeholder="company"></input>
+          <p class="caption">Enter the name of the company.</p>
+        </div>
+        <div class="form-group">
+          <label class="row-margin">Lorem</label>
+          <input class="error row-margin" type="text" name="company" placeholder="ipsum"></input>
+          <p class="caption">Lorem ipsum sit amet.</p>
+          <p class="caption error">Please enter a valid Lorem!</p>
+        </div>
+        <div class="form-group">
+          <label class="row-margin">Gender</label>
+          <select name="gender">
+            <option>male</option>
+            <option>female</option>
+            <option>trans-</option>
+            <option>other</option>
+          </select>
+          <p class="caption">Select closest matching one.</p>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="msg"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
+

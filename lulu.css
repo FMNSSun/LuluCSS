@@ -71,8 +71,13 @@ h5 {
   max-width: 60em;
 }
 
+.small-border {
+  border: solid 0.1em lightgray;
+  border-radius: 0.3em;
+}
 
-.nav a {
+
+.nav a, .nav a:visited {
   color: dimgray;
 }
 
@@ -196,11 +201,12 @@ h5 {
 
 
 .float-grids {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
-.float-grids:after {
+.float-grids-row {
+}
+
+.float-grids-row:after {
   clear: both;
   display: table;
   content: "";
@@ -244,6 +250,31 @@ p + p {
   margin-top: 1em;
 }
 
+.tbl-grids { 
+  display: table;
+  border-spacing: 1em 0.5em;
+}
+
+[class*='tbl-grids-row-'] {
+  display: table-row;
+}
+
+
+.tbl-grids-cell {
+  display: table-cell;
+}
+
+button { 
+  padding: 0.5em;
+  font-size: 0.8em;
+  border: solid 0.2em lightgray;
+  background-color: whitesmoke;
+}
+
+button:hover {
+  border: solid 0.2em cornflowerblue;
+  cursor: pointer;
+}
 
 .flex-grids { }
 
@@ -260,6 +291,17 @@ p + p {
 .flex-grids-row, [class*='flex-grids-row-'] {
   display: flex;
   margin: 0; padding: 0;
+}
+
+.flex-cell {
+  /*flex: 1;*/
+}
+
+.flex-wrap-cell {
+}
+
+.row-margin + .row-margin {
+  margin-top: 0.5em;
 }
 
 .flex-box {
@@ -397,6 +439,10 @@ p.title {
   .min-margin-left {
     margin-left: 1em;
   }
+
+  .tbl-grids { display: block; }
+  .tbl-grids-row-2 { display: block; }
+  .tbl-grids-cell { display: block; }
 }
 
 
@@ -406,3 +452,17 @@ p.title {
   border: solid 1px grey;
   padding: 0.1em;
 }
+
+input {
+  padding: 0.5em;
+  border: solid 0.2em lightgray;
+  box-shadow: none;
+  width: 15em;
+}
+
+
+input:focus {
+  border: solid 0.2em cornflowerblue;
+  box-shadow: none;
+}
+

@@ -124,6 +124,15 @@ h5 {
   border-radius: 0.3em;
 }
 
+.normal-border {
+  border: solid 0.1em lightgray;
+  border-radius: 0.3em;
+}
+
+.round {
+  border-radius: 0.3em;
+}
+
 .side-borders {
   border-left: solid 0.2em lightgray;
   border-right: solid 0.2em lightgray;
@@ -248,10 +257,13 @@ h5 {
 }
 
 .flex-cell {
-  /*flex: 1;*/
+  flex: 1;
+  padding: 0.5em;
 }
 
 .flex-wrap-cell {
+  padding: 0.5em;
+  box-sizing: border-box;
 }
 
 .flex-box {
@@ -277,7 +289,11 @@ h5 {
 .flex-grids-wrap-row-4 .flex-wrap-box { width: 21%; }
 .flex-grids-wrap-row-3 .flex-wrap-box { width: 29%; }
 .flex-grids-wrap-row-2 .flex-wrap-box { width: 46%; }
-
+[class*='flex-grids-wrap-'] .flex-wrap-cell { margin: 0; }
+.flex-grids-wrap-row-5 .flex-wrap-cell { width: 20%; }
+.flex-grids-wrap-row-4 .flex-wrap-cell { width: 25%; }
+.flex-grids-wrap-row-3 .flex-wrap-cell { width: 33.3%; }
+.flex-grids-wrap-row-2 .flex-wrap-cell { width: 50%; }
 
 /* Table Grids */
 
@@ -445,9 +461,24 @@ button {
   width: 100%;
 }
 
-button:hover {
+button:hover, button:active {
   border: solid 0.2em cornflowerblue;
   cursor: pointer;
+}
+
+.button2, .button2:visited {
+  padding: 0.5em;
+  font-size: 0.8em;
+  border: solid 0.2em cornflowerblue;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.button2:hover, .button2:active {
+  padding: 0.5em;
+  font-size: 0.8em;
+  border: solid 0.2em lightgray;
+  color: white;
 }
 
 .form-group input, .form-group select, textarea {
@@ -525,6 +556,11 @@ p.error, span.error {
   max-width: 60em;
   box-sizing: border-box;
 }
+
+.mw-60 { max-width: 60em; }
+.mw-40 { max-width: 40em; }
+.mw-30 { max-width: 30em; }
+.mw-20 { max-width: 20em; }
 
 .c-inverted {
   color: lightgray;

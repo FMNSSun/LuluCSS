@@ -566,6 +566,7 @@ p.error, span.error {
 }
 
 .mw-60 { max-width: 60em; }
+.mw-50 { max-width: 50em; }
 .mw-40 { max-width: 40em; }
 .mw-30 { max-width: 30em; }
 .mw-20 { max-width: 20em; }

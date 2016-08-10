@@ -377,7 +377,6 @@ caption {
 }
 
 
-
 /* Alert Boxes */
 
 .err-box {
@@ -475,9 +474,20 @@ button:hover, button:active {
 }
 
 .button2:hover, .button2:active {
+  border: solid 0.2em lightgray;
+  color: white;
+}
+
+.button3, .button3:visited {
   padding: 0.5em;
   font-size: 0.8em;
-  border: solid 0.2em lightgray;
+  border: solid 0.2em black;
+  background-color: black;
+  color: white;
+}
+
+.button3:hover, .button3:active {
+  text-decoration: underline;
   color: white;
 }
 
@@ -517,7 +527,6 @@ p.error, span.error {
   color: red;
 }
 
-
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-center { text-align: center; }
@@ -536,7 +545,6 @@ p.error, span.error {
 .img-wrapper + p {
   margin-top: 1em;
 }
-
 
 
 /* Misc */
@@ -569,6 +577,7 @@ p.error, span.error {
 
 
 /* Media Queries */
+
 @media (max-width: 75em)
 {
   [class*='flex-grids-wrap-row-'] .flex-wrap-box {
@@ -579,7 +588,6 @@ p.error, span.error {
     width: 25%;
   }
 }
-
 
 @media (max-width: 55em)
 {

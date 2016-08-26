@@ -230,9 +230,6 @@ h5 {
   box-sizing: border-box;
 }
 
-.flex-w-cell + .flex-w-cell, [class*='flex-w-cell-'] + [class*='flex-w-cell-'] {
-  margin-left: 1.5em;
-}
 
 .flex-box {
   flex: 1;

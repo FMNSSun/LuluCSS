@@ -242,7 +242,7 @@ h5 {
   box-shadow: 0 0 1em -0.1em black;
 }
 
-[class*='flex-grids-wrap-row-'] .flex-wrap-box {
+.flex-wrap-box {
   box-sizing: border-box;
   padding: 1em;
   margin: 2%;
@@ -436,6 +436,7 @@ button:hover, button:active {
   border: solid 0.2em cornflowerblue;
   background-color: cornflowerblue;
   color: white;
+  display: inline-block;
 }
 
 .button2:hover, .button2:active {
@@ -449,6 +450,7 @@ button:hover, button:active {
   border: solid 0.2em black;
   background-color: black;
   color: white;
+  display: inline-block;
 }
 
 .button3:hover, .button3:active {
